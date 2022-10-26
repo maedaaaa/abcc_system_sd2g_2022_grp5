@@ -16,7 +16,7 @@
 <!-- タイトルとボタンあいうえお かきくけこ--> 
 <div class="row mt-2 bg-light">
     <div class="col-4">
-    <h2 class="text-danger" style="margin-left:40px;">ChornoSky</h2>
+    <h2 class="text-danger" style="margin-left:40px;">ChronoSky</h2>
     </div>
 
     <div class="col-2 offset-6">

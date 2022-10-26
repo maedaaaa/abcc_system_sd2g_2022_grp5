@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- タイトルとボタンあいうえお -->
+<!-- タイトルとボタンあいうえお かきくけこ--> 
 <div class="row mt-2 bg-light">
     <div class="col-4">
     <h2 class="text-danger" style="margin-left:40px;">ChornoSky</h2>

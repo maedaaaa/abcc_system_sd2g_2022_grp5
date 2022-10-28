@@ -1,0 +1,14 @@
+.title {
+    color:red;
+    margin-left:40px;
+}
+
+#var{
+    width:100%;
+    position:fixed;top:0%;
+    z-index: 2;
+}
+
+#myCarousel{
+    margin-top: 103px;
+}

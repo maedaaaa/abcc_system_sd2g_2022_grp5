@@ -69,9 +69,9 @@
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="" ></button>
     </div>
     <div class="carousel-inner">
       <!-- 一個目 -->
@@ -104,7 +104,7 @@
       </div>
 
       <!-- 三個目 -->
-      <div class="carousel-item ">
+      <div class="carousel-item">
       <!-- 画像、動画 -->
       <video src="img/video-home-SP37-V5-desktop_3.mp4"  style="width:100%; height:750px; object-fit: cover;" loop autoplay muted></video>
 
@@ -127,7 +127,37 @@
     </button>
   </div>
 
-  
+
+  <!-- 商品表示 -->
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="itemdisplay col-lg-4">
+        <?php 
+          require_once 'itemcls.php';
+          $cls = new item();
+          $cls-> funcInfo(1);
+        ?>
+      </div>
+      <div class="itemdisplay col-lg-4">
+        <?php 
+          require_once 'itemcls.php';
+          $cls = new item();
+          $cls-> funcInfo(2);
+        ?>
+      </div>
+      <div class="itemdisplay col-lg-4">
+        <?php 
+          require_once 'itemcls.php';
+          $cls = new item();
+          $cls-> funcInfo(3);
+        ?>
+      </div>
+    </div><!-- /.row -->
+
+  </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

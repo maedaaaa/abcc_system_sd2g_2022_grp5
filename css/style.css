@@ -12,3 +12,18 @@
 #myCarousel{
     margin-top: 103px;
 }
+
+.carousel {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.itemdisplay{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.itemimg {
+    width: 180px;
+    height: auto;;
+}

@@ -6,7 +6,7 @@ class DBManager{
         return $pdo;
     }
 
-    //商品表示フォーマット
+    //商品IDで表示
     public function getItemInfo($getid){
         $pdo = $this->dbConnect();
         $sql = "SELECT * FROM items WHERE item_id = ?";
@@ -18,5 +18,50 @@ class DBManager{
         return $searcharray;
     }
 
+    //商品一覧表示
+    public function getItemList(){
+        $pdo = $this->dbConnect();
+        $sql = "SELECT item_id FROM items";
+        $ps = $pdo->query($sql);
+        $searcharray = $ps->fetchALL();
+        $count = count($searcharray);
+        require_once 'itemcls.php';
+        for($i = 1 ; $i <= $count ; $i++){
+          echo '<div class="itemdisplay col-lg-4">';
+          $cls = new item();
+          $cls-> funcInfo($i);
+          echo '</div>';
+        }
+    }
+
+    //メンズ一覧表示
+    public function getMensList(){
+        $pdo = $this->dbConnect();
+        $sql = "SELECT item_id FROM items WHERE item_gender = 0";
+        $ps = $pdo->query($sql);
+        $searcharray = $ps->fetchALL();
+        require_once 'itemcls.php';
+        foreach($searcharray as $row){
+            echo '<div class="itemdisplay col-lg-4">';
+            $cls = new item();
+             $cls-> funcInfo($row["item_id"]);
+             echo '</div>';
+        }
+    }
+
+    //レディース一覧表示
+    public function getLadiesList(){
+        $pdo = $this->dbConnect();
+        $sql = "SELECT item_id FROM items WHERE item_gender = 1";
+        $ps = $pdo->query($sql);
+        $searcharray = $ps->fetchALL();
+        require_once 'itemcls.php';
+        foreach($searcharray as $row){
+            echo '<div class="itemdisplay col-lg-4">';
+            $cls = new item();
+             $cls-> funcInfo($row["item_id"]);
+             echo '</div>';
+        }
+    }
 }
 ?>

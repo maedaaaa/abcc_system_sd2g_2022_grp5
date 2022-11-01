@@ -1,5 +1,6 @@
 <?php
 class item{
+        //商品表示フォーマット
     public function funcInfo($id){
         require_once 'DBManager.php';
         $dbmng = new DBManager();

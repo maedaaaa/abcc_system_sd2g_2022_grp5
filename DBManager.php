@@ -63,5 +63,23 @@ class DBManager{
              echo '</div>';
         }
     }
+
+    //新規登録
+    public function addUser($getmail,$getpass,$getlastname,$getfirstname,$getpostcode,$getaddress,$getphone){
+        $pdo = $this->dbConnect();
+        $sql = "INSERT INTO customers (mail,customer_password,lastname,firstname,postcode,customer_address,phonenumber) VALUE(?,?,?,?,?,?,?)";
+    
+        $ps = $pdo->prepare($sql);
+    
+        $ps->bindValue(1,$getmail,PDO::PARAM_STR);
+        $ps->bindValue(2,password_hash($getpass,PASSWORD_DEFAULT),PDO::PARAM_STR);
+        $ps->bindValue(3,$getlastname,PDO::PARAM_STR);
+        $ps->bindValue(4,$getfirstname,PDO::PARAM_STR);
+        $ps->bindValue(5,$getpostcode,PDO::PARAM_STR);
+        $ps->bindValue(6,$getaddress,PDO::PARAM_STR);
+        $ps->bindValue(7,$getphone,PDO::PARAM_STR);
+        
+        $ps->execute();
+    }
 }
 ?>

@@ -32,3 +32,13 @@
     margin-top: 103px;
     padding-top: 10px;
 }
+
+#newuser{
+    width:60%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 50px;;
+}
+
+.txtBox {
+    margin-bottom: 20px;;
+}

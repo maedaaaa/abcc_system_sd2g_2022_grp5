@@ -17,6 +17,18 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
+<?php
+    require_once 'DBManager.php';
+
+    $dbmng = new DBManager;
+    $dbmng->addUser($_POST["mail"],$_POST["pass"],$_POST["lastname"],$_POST["firstname"],$_POST["postcode"],$_POST["address"],$_POST["phone"]);
+
+        echo '<h2 style="color:red; margin-left:20%; margin-top:150px">登録完了</h2>';
+        echo '<p>登録が完了しました</p>';
+        echo '<p>ありがとうございます。</p>';
+        echo '<a href="(G1-1)toppage.php">トップページへ戻る</a>';
+?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

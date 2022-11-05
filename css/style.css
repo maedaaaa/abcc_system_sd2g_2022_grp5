@@ -99,11 +99,7 @@ body {
     padding: 0;
   }
   
-  p {
-    padding: 10px;
-    color:rgb(188, 29, 29);
-  }
-  
+
   #container {
     margin: 70px 20px;
   }
@@ -112,6 +108,8 @@ body {
     position: relative;
     text-align: center;
     font-size: 18px;
+    padding: 10px;
+    color:rgb(188, 29, 29);
   }
   
   .border:before{

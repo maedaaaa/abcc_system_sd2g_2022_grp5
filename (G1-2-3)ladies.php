@@ -36,7 +36,7 @@
     
     
     <img src="img/img_cover_cartier_new.webp" class="imgs" style="width: 100%; height:600px; object-fit: cover;" loop autoplay muted>
-    <h1 class="img-h1">Wotches for woman</h1>
+    <h1 class="img-h1">Watches for woman</h1>
     
 
 

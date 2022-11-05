@@ -81,5 +81,18 @@ class DBManager{
         
         $ps->execute();
     }
+
+    //ログインチェック
+    public function logincheck($getmail){
+        $pdo = $this->dbConnect();
+        $sql = "SELECT * FROM customers WHERE mail = ?";
+
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,$getmail,PDO::PARAM_STR);
+        $ps->execute();
+
+        $searchArray = $ps->fetchALL();
+        return $searchArray;
+    }
 }
 ?>

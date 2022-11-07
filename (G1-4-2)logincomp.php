@@ -17,7 +17,7 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
-<h2 style="color:red; margin-left:20%; margin-top:150px">登録完了</h2>;
+<h2 style="color:red; margin-left:20%; margin-top:150px">登録完了</h2>
     <p>登録が完了しました</p>
     <p>ありがとうございます。</p>
     <a href="(G1-1)toppage.php">トップページへ戻る</a>

@@ -17,8 +17,10 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
-<h3 style="margin-top:150px;">ログアウトしますか？</h2>
-<a href="logout.php" style="margin-top: 3%; margin-left:30%; margin-bottom:10%;"><button class="btn btn-danger" >ログアウト</button></a>
+<div class="comp">
+<h2>ログアウトしますか？</h2>
+<a href="logout.php"><button class="btn btn-danger" style="margin-top:40px;">ログアウト</button></a>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

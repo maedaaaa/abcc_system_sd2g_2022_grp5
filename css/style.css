@@ -137,3 +137,13 @@ body {
   margin-top: 150px;
   text-align: center;
 }
+
+.alink{
+  color:inherit;
+  text-decoration: none;
+}
+
+.itemimgone{
+  width:300px;
+  height: auto;
+}

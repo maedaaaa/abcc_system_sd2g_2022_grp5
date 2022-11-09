@@ -19,10 +19,8 @@
 
 <!-- 商品一覧見出し -->
 <div class ="second row">
-    <div class="col-4">
-        <h3 style="margin-left:60px;">商品一覧</h3>
-    </div>
-    <div class="col-8"  style="text-align:right; padding-right:60px;">
+    
+    <div class="col-12"  style="text-align:right; padding-right:60px;">
         <a href="(G1-2-2)men's.php">メンズ</a>
         <a href="(G1-2-3)ladies.php">レディース</a>
     </div>
@@ -31,6 +29,12 @@
 <!-- 商品表示 -->
 
 <div class="container marketing">
+
+ <div id="container">
+    <p class="border">商品一覧</p>
+    </div>
+
+    <hr>
 
     <!-- Three columns of text below the carousel -->
     <div class="row">

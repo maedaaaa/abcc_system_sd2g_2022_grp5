@@ -6,7 +6,7 @@ class DBManager{
         return $pdo;
     }
 
-    //商品IDで表示
+    //商品IDで検索
     public function getItemInfo($getid){
         $pdo = $this->dbConnect();
         $sql = "SELECT * FROM items WHERE item_id = ?";

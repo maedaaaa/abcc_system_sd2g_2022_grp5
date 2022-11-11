@@ -23,10 +23,13 @@
     $dbmng = new DBManager;
     $dbmng->addUser($_POST["mail"],$_POST["pass"],$_POST["lastname"],$_POST["firstname"],$_POST["postcode"],$_POST["address"],$_POST["phone"]);
 
-        echo '<h2 style="color:red; margin-left:20%; margin-top:150px">登録完了</h2>';
-        echo '<p>登録が完了しました</p>';
-        echo '<p>ありがとうございます。</p>';
-        echo '<a href="(G1-1)toppage.php">トップページへ戻る</a>';
+        echo '<h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">新規登録完了</h2>';
+
+        echo'<hr>';
+        
+        echo '<p style="text-align: center; font-size: 20px; margin-bottom:50px; margin-top:50px">登録が完了しました<br>ありがとうございます</p>';
+        // echo '<p>ありがとうございます。</p>';
+        echo '<a href="(G1-1)toppage.php" style="margin-left:46%; margin-top:50px">トップページへ戻る</a>';
 ?>
 
 

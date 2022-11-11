@@ -30,7 +30,7 @@
     
     
     <img src="img/m0328_001395 (1).jpg" class="imgs" style="width: 100%; height:600px; object-fit: cover;" loop autoplay muted>
-    <h1 class="img-h1">Watches for men</h1>
+    <h1 class="img-men-h1">Watches for men</h1>
     
 
 

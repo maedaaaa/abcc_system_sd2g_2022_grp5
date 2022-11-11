@@ -24,10 +24,12 @@
     }
 ?>
 
-<h2 style="color:red; margin-left:20%; margin-top:150px">ログイン</h2>
+<h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">ログイン</h2>
+
+<hr>
 
 <form action="logincheck.php" method="post" id="newuser">
-    <p>アカウントをお持ちの方</p>
+    <p>▻アカウントをお持ちの方</p>
 
     <div class="txtBox form-floating">
         <input type="text" class="form-control" id="txt1"
@@ -40,14 +42,14 @@
         <label for="txt2">パスワード</label>
     </div>
 
-    <input type="submit" class="btn btn-danger" style="margin-top: 5%; margin-left:30%;" value="ログイン">   
+    <input type="submit" class="btn-btn-danger" style="margin-top: 2%; margin-left:45%;" value="ログイン">   
     
 </form>
 
 <div id="newuser">
-<p style="margin-top: 5%;">アカウントをお持ちでない方</p>
+<p style="margin-top: 5%;">▻アカウントをお持ちでない方</p>
 
-<a href="(G1-5-1)newRegistration.php" style="margin-top: 3%; margin-left:30%; margin-bottom:10%;"><button class="btn btn-danger" >新規登録へ</button></a>
+<a href="(G1-5-1)newRegistration.php" style="margin-top: 3%; margin-left:43.35%; margin-bottom:10%;"><button class="btn-btn-danger" >新規登録へ</button></a>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

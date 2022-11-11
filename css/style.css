@@ -147,3 +147,18 @@ body {
   width:300px;
   height: auto;
 }
+
+.btn-btn-danger{
+display: inline-block;
+padding: 0.3em 1em;
+text-decoration: none;
+color: rgb(188, 29, 29);
+border: solid 2px rgb(188, 29, 29);
+border-radius: 3px;
+transition: .4s;
+}
+
+.btn-btn-danger:hover {
+  background: rgb(188, 29, 29);
+  color: white;
+}

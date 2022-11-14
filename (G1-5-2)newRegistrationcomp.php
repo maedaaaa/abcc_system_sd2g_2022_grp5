@@ -27,9 +27,10 @@
 
         echo'<hr>';
         
-        echo '<p style="text-align: center; font-size: 20px; margin-bottom:50px; margin-top:50px">登録が完了しました<br>ありがとうございます</p>';
-        // echo '<p>ありがとうございます。</p>';
-        echo '<a href="(G1-1)toppage.php" style="margin-left:46%; margin-top:50px">トップページへ戻る</a>';
+        echo '<p style="text-align: center; font-size: 17px; margin-bottom:5px; margin-top:40px">登録が完了しました</p>';
+        echo '<p style="text-align: center; font-size: 17px; margin-bottom:30px; margin-top:10px">ありがとうございます</p>';
+       
+        echo '<a href="(G1-1)toppage.php" style="margin-left:46.3%; margin-top:50px">トップページへ戻る</a>';
 ?>
 
 

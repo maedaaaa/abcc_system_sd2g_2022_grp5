@@ -17,9 +17,10 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 <div class="comp">
-<h2 style="color:red;">ログイン完了</h2>
-    <p style="margin-top:40px;">ログインが完了しました</p>
-    <p>引き続きショッピングをお楽しみください</p>
+<h2 style="color:rgb(188, 29, 29); margin-right:50%;">ログイン完了</h2>
+   <hr>
+    <p style="margin-top:40px; font-size: 17px; margin-bottom:10px;">ログインが完了しました</p>
+    <p style="font-size: 17px; margin-bottom:30px;">引き続きショッピングをお楽しみください</p>
     <a href="(G1-1)toppage.php">トップページへ戻る</a>
 </div>
 

@@ -22,7 +22,7 @@
     
     <div class="col-12"  style="text-align:right; padding-right:60px;">
         <a href="(G1-2-1)itemlist.php">商品一覧</a>
-        <a href="(G1-2-3)ladies.php">レディース</a>
+        <a href="(G1-2-2)men's.php">メンズ</a>
     </div>
 </div>
 
@@ -30,7 +30,7 @@
     
     
     <img src="img/img_cover_cartier_new.webp" class="imgs" style="width: 100%; height:600px; object-fit: cover;" loop autoplay muted>
-    <h1 class="img-h1">Watches for wonan</h1>
+    <h1 class="img-h1">Watches for woman</h1>
     
 
 

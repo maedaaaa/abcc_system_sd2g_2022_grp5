@@ -19,8 +19,10 @@
 
 
 <div class="comp">
-    <h2 style="color:red;">ログアウト完了</h2>
-    <p style="margin-top:40px;">ログアウトが完了しました</p>
+    <h2 style="color:rgb(188, 29, 29); margin-right:50%;">ログアウト完了</h2>
+    <hr>
+
+    <p style="margin-top:40px; margin-bottom:25px;">ログアウトが完了しました</p>
     
     <a href="(G1-1)toppage.php">トップページへ戻る</a>
 </div>

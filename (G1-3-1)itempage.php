@@ -19,12 +19,14 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
+<!-- GETで取得した値で商品情報を取得 -->
 <?php
     require_once 'DBManager.php';
     $dbmng = new DBManager();
     $searcharray = $dbmng->getItemInfo($_GET['id']);
 ?>
 
+<!-- 商品単体表示 -->
 <div class="second row">   
     <div class="col-lg-6 text-center">
         <?php
@@ -40,10 +42,23 @@
                 echo '<h2>'.$row["item_name"].'</h2>';
                 echo '<p>￥'.$row["item_price"].'</p>';
             }
+            
+            //session のためのform
+            echo '<form action="(G1-3-2)addcart.php" method="post">';
+            echo '<select name="count">';
+            for($i = 1; $i<=10;$i++){
+                echo '<option value="',$i,'">',$i,'</option>';
+            }
+            echo '</select>';
+
+            echo '<input type="hidden" name="id" value="'.$_GET['id'].'">';
+            echo '<p><input type="submit" class="btn-btn-danger" style="margin-top:20px;" value="カートに追加"></p>';
+            echo '</form>';
+
         ?>
     </div>
 </div>
-    
+
 <div class="second row"> 
     <div class="col-lg-6 text-center" style="padding:5%;">
         <h2 style="color:rgb(188, 29, 29);">商品説明</h2>

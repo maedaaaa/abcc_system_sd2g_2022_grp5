@@ -31,7 +31,7 @@
       <!-- 一個目 -->
       <div class="carousel-item active">
       <!-- 画像、動画 -->
-      <video src="img/hublot_pc.mp4" style="width:100%; height:750px; object-fit: cover;" loop autoplay muted></video>
+      <video src="img/hublot_pc.mp4" style="width:100%; height:600px; object-fit: cover;" loop autoplay muted></video>
       
 
         <div class="container">
@@ -46,7 +46,7 @@
       <!-- 二個目 -->
       <div class="carousel-item">
       <!-- 画像、動画 -->
-      <video src="img/hublot_pc.mp4" style="width:100%; height:750px; object-fit: cover;" loop autoplay muted></video> 
+      <video src="img/hublot_pc.mp4" style="width:100%; height:600px; object-fit: cover;" loop autoplay muted></video> 
 
         <div class="container">
           <div class="carousel-caption">
@@ -60,7 +60,7 @@
       <!-- 三個目 -->
       <div class="carousel-item">
       <!-- 画像、動画 -->
-      <video src="img/video-home-SP37-V5-desktop_3.mp4"  style="width:100%; height:750px; object-fit: cover;" loop autoplay muted></video>
+      <video src="img/video-home-SP37-V5-desktop_3.mp4"  style="width:100%; height:600px; object-fit: cover;" loop autoplay muted></video>
 
         <div class="container">
           <div class="carousel-caption text-end">

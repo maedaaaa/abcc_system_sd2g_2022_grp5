@@ -16,11 +16,38 @@
 
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
-<div id="app">
-        <h2>カートに追加</h2>                     
-        <p>カートに商品を追加しました。</p> 
-        <a href="https://www.google.com/?hl=ja"><button class="btn btn-danger" >カートを見る</button>
-        <a href="https://www.google.com/?hl=ja"><button class="btn btn-danger">戻る</button></a>   
+
+<!-- 受け取ったPOSTをセッションに保存 -->
+<?php 
+    session_start();
+    $id = $_POST["id"];
+    if(!isset($_SESSION['item'])){
+        $_SESSION['item']=[];
+    }
+    $count=0;
+    if(isset($_SESSION['item'][$id])){
+        $count=$_SESSION['item'][$id]['count'];
+    }
+    $_SESSION['item'][$id]=['count'=>$count + $_POST['count']];
+
+?>
+
+<!-- ページ表示 -->
+<div class="comp">
+<h2 style="color:rgb(188, 29, 29);">カートに追加</h2>
+    <p style="margin-top:40px;">カートに商品を追加しました。</p>
+    <p>引き続きショッピングをお楽しみください</p>
+    <a href="(G1-7)cart.php"><button class="btn-btn-danger">カートを見る</button></a>
+</div>
+
+<!-- 仮試し -->
+<?php 
+    foreach($_SESSION['item'] as $id=>$item){
+        echo $id;
+        echo $item['count'].'<br>';
+    }
+?>
+          
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

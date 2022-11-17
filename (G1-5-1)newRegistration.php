@@ -18,6 +18,7 @@
 <?php include_once 'header.php'; ?>
 
 <h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">新規登録</h2>
+<hr>
 
 <form action="(G1-5-2)newRegistrationcomp.php" method="post" id="newuser">
     

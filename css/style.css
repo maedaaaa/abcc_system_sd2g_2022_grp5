@@ -187,3 +187,19 @@ transition: .4s;
   color: white;
   
 }
+
+.cart{
+  margin-top:5%;
+  border: 1px solid #333333;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:5%;
+}
+
+.cartimg{
+  width:200px;
+}
+
+.cart-div{
+  text-align: center;
+}

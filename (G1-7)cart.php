@@ -14,8 +14,40 @@
 </head>
 <body>
 
+<?php session_start(); ?>
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
+
+<!-- カートセッションに情報がない場合cart2に遷移 -->
+<?php if(!isset($_SESSION['item'])){
+        header("Location:(G1-7)cart2.php");
+    }
+?>
+
+<h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">カート件数( <?php echo count($_SESSION["item"]); ?> )</h2>
+
+<!-- カート表示 -->
+<?php 
+require_once 'DBManager.php';
+$dbmng = new DBManager();
+
+    foreach($_SESSION['item'] as $id=> $product){
+        $itemId = $id;
+        $searcharray = $dbmng->getItemInfo($itemId);
+        foreach($searcharray as $row){
+        echo '<div class="cart row">';
+        echo    '<div class="cart-div col-6">';
+        echo        '<img class="cartimg" src = "./img/'.$row["item_img"].'" > ';
+        echo    '</div>';
+        echo    '<div class="cart-div col-6">';
+        echo        '<h3 style="margin-top:15%;">'.$row["item_name"].'</h3>';
+        echo        '¥'.$row["item_price"].'<br>';
+        echo        $product['count'].'ケ';
+        echo    '</div>';
+        echo '</div>';
+        }
+    }
+?>
 
 
 

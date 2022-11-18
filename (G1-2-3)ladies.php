@@ -52,7 +52,7 @@
         <?php
         require_once 'DBManager.php';
         $dbmng = new DBManager();
-        $dbmng->getMensList();
+        $dbmng->getLadiesList();
         ?>    
     </div><!-- /.row -->
 

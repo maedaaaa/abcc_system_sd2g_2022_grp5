@@ -8,7 +8,7 @@
     foreach($searchArray as $row){
         if(password_verify($_POST["pass"],$row["customer_password"]) == true &&
         $row["mail"] == $_POST["mail"]){
-            $_SESSION['pass'] = $row['customer_password'];
+            $_SESSION['customer_id'] = $row['customer_id'];
             header("Location:(G1-4-2)logincomp.php");   
         }
     }

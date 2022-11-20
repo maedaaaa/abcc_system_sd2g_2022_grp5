@@ -188,11 +188,12 @@ transition: .4s;
   
 }
 
+/* カート */
 .cart{
   margin-top:5%;
   border: 1px solid #333333;
-  margin-left:10%;
-  margin-right:10%;
+  margin-left:5%;
+  margin-right:5%;
   margin-bottom:5%;
 }
 
@@ -202,4 +203,30 @@ transition: .4s;
 
 .cart-div{
   text-align: center;
+}
+
+.cart-info{
+  margin-top:7%;
+  border: 1px solid #333333;
+  margin-left:5%;
+  margin-right:10%;
+  margin-bottom:5%;
+}
+
+.cart-info2{
+  background-color: rgba(55, 55, 55, 0.184);
+  padding: 2%;
+  margin-bottom:10px;
+}
+
+/* 注文概要 */
+.money{
+  text-align: left;
+  margin-left: 2%;
+   float: left
+}
+
+.money2{
+  text-align: right;
+  margin-right: 2%;
 }

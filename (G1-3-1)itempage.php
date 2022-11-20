@@ -46,12 +46,13 @@
             //session のためのform
             echo '<form action="(G1-3-2)addcart.php" method="post">';
             echo '<select name="count">';
-            for($i = 1; $i<=10;$i++){
+            for($i = 1; $i<=5;$i++){
                 echo '<option value="',$i,'">',$i,'</option>';
             }
             echo '</select>';
 
             echo '<input type="hidden" name="id" value="'.$_GET['id'].'">';
+            
             echo '<p><input type="submit" class="btn-btn-danger" style="margin-top:20px;" value="カートに追加"></p>';
             echo '</form>';
 

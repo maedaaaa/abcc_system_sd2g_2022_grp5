@@ -19,7 +19,7 @@
 
 <?php
     session_start();
-    if(isset($_SESSION["pass"]) == true){
+    if(isset($_SESSION["customer_id"]) == true){
         header("Location:(G1-10)mypage.php");
     }
 ?>

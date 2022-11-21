@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +18,14 @@
             <p style="margin-top:40pxpx;">秋の装いにあうシックな</p>
             <p>腕時計をご紹介。</p>
             <a href="(G1-3-1)itempage.php">
-                <img src="omega-seamaster-aqua-terra-150m-22010412103004-l.png"
-                 alt="商品名">
-                <p>￥80000</p></a>
-            </a>
+                <img src="m0328_001395 (1).jpg"
+                 >
+                 <p>商品名</p>
+                 <p>￥</p>
+                </a>
+<a href="(G1-3-1)itempage.php">
+    <img src="SEAMASTER 300.png">
+    <p>商品名</p>
+    <p>￥</p>
+</a>
+

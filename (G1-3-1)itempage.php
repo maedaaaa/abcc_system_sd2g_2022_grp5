@@ -27,8 +27,9 @@
 ?>
 
 <!-- 商品単体表示 -->
-<div class="second row">   
-    <div class="col-lg-6 text-center">
+<div class="second row"> 
+    <!-- <div class="col-lg-6 text-center"> -->
+    <div align="center">
         <?php
             foreach($searcharray as $row){
                 echo '<img src="./img/'.$row["item_img"].'" class="itemimgone">';
@@ -36,7 +37,8 @@
         ?>
     </div>
 
-    <div class="col-lg-6 text-center" style="margin-top:100px;">
+<!-- <div class="col-lg-6 text-center" style="margin-top:100px;"> -->
+    <div align="center" style="margin-top: 2%; margin-bottom: 5%; ">
         <?php
             foreach($searcharray as $row){
                 echo '<h2>'.$row["item_name"].'</h2>';
@@ -59,20 +61,30 @@
     </div>
 </div>
 
-<div class="second row"> 
-    <div class="col-lg-6 text-center" style="padding:5%;">
+<hr>
+
+<!-- <div class="second row">  -->
+    <!-- <div class="col-lg-6 text-center" style="padding:5%;" > -->
+        
+        <div align="center">
+        <div style="width: 450px;">
+
         <h2 style="color:rgb(188, 29, 29);">商品説明</h2>
         <?php
             foreach($searcharray as $row){
                 echo '<p style="color: gray;">'.$row["item_description"].'</p>';
             }
         ?>
-    </div>
+ 
 
-    <div class="col-lg-6 text-center">
+    <!-- <div class="col-lg-6 text-center"> -->
+    </div>
+       </div>
+
+    <div style="margin-bottom: 5%;">
 
     </div>
-</div>
+<!-- </div> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

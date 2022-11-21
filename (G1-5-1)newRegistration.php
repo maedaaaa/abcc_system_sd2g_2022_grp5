@@ -58,7 +58,11 @@
         <label for="txt7">電話番号</label>
     </div>
 
-    <input type="submit" class="btn-btn-danger" style="margin-top: 2%; margin-left:45%; margin-bottom:10%;" value="新規登録">
+
+    
+<div align="center">
+ <input type="submit" class ="btn-btn-danger" style="margin-bottom:10%;" value="新規登録">
+ </div>
 
 </form>
 

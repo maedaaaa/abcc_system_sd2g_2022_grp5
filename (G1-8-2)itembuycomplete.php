@@ -26,15 +26,22 @@ session_start()
     require_once 'DBManager.php';
 
     $dbmng = new DBManager;
-    $dbmng->order($_SESSION['customer_id'],$_POST['goukei']);
+    $orderid = $dbmng->order($_SESSION['customer_id'],$_POST['goukei']);
 ?>
 
-<!-- 注文詳細 -->
+<!-- 注文詳細登録 -->
 <?php
     require_once 'DBManager.php';
 
     $dbmng = new DBManager;
-    $dbmng->order_item();
+    
+    foreach($_SESSION['item'] as $id=> $product){
+        $itemId = $id;
+        $searcharray = $dbmng->getItemInfo($itemId);
+        foreach($searcharray as $row){
+            $dbmng->order_item($row['item_id'],$orderid,$product['count'],$row['item_price']);
+        }
+    }
 ?>
 
 <!-- 購入完了表示 -->

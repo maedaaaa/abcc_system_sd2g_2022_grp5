@@ -108,16 +108,19 @@ class DBManager{
         $ps->bindValue(4,$getorder_value,PDO::PARAM_INT);
         
         $ps->execute();
+
+        $orderid = $pdo -> lastInsertId();
+        return $orderid;
     }
 
     //注文詳細
-    public function order_item($getitem_id,$getorder_item_quantity,$getpurchase_price){
+    public function order_item($getitem_id,$getorder_id,$getorder_item_quantity,$getpurchase_price){
         $pdo = $this->dbConnect();
-        $sql = "INSERT INTO orders_items (item_id,order_id,order_item_quantity,order_item_date,purchase_price) VALUE(?,?,?,?,?)";
+        $sql = "INSERT INTO order_items (item_id,order_id,order_item_quantity,order_item_date,purchase_price) VALUE(?,?,?,?,?)";
         $ps = $pdo->prepare($sql);
 
         $ps->bindValue(1,$getitem_id,PDO::PARAM_INT);
-        $ps->bindValue(2,,PDO::PARAM_INT);
+        $ps->bindValue(2,$getorder_id,PDO::PARAM_INT);
         $ps->bindValue(3,$getorder_item_quantity,PDO::PARAM_INT);
         $ps->bindValue(4,date('Y-m-d'),PDO::PARAM_STR);
         $ps->bindValue(5,$getpurchase_price,PDO::PARAM_INT);

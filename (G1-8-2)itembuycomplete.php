@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>itembuycomp</title>
 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -18,13 +18,30 @@
 <?php include_once 'header.php'; ?>
 
 <?php
+session_start()
+?>
+
+<!-- 注文登録 -->
+<?php
     require_once 'DBManager.php';
 
     $dbmng = new DBManager;
-    $dbmng->addUser($_POST["mail"],$_POST["pass"],$_POST["lastname"],$_POST["firstname"],$_POST["postcode"],$_POST["address"],$_POST["phone"]);
-
-        echo '<h2 style="color:red; margin-left:20%; margin-top:150px">購入完了</h2>';
-        echo '<p>購入が完了しました</p>';
-        echo '<p>お買い上げありがとうございます。</p>';
-        echo '<a href="(G1-1)toppage.php">トップページへ戻る</a>';
+    $dbmng->order($_SESSION['customer_id'],$_POST['goukei']);
 ?>
+
+<!-- 注文詳細 -->
+<?php
+    require_once 'DBManager.php';
+
+    $dbmng = new DBManager;
+    $dbmng->order_item();
+?>
+
+<!-- 購入完了表示 -->
+<div class="comp">
+
+<h2 style="color:rgb(188, 29, 29);">購入完了</h2>
+    <p style="margin-top:40px;">購入が完了しました</p>
+    <p>お買い上げありがとうございます</p>
+    <a href="(G1-1)toppage.php"><button class="btn-btn-danger">トップページへ戻る</button></a>
+</div>

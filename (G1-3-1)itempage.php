@@ -52,7 +52,6 @@
             echo '</select>';
 
             echo '<input type="hidden" name="id" value="'.$_GET['id'].'">';
-            
             echo '<p><input type="submit" class="btn-btn-danger" style="margin-top:20px;" value="カートに追加"></p>';
             echo '</form>';
 

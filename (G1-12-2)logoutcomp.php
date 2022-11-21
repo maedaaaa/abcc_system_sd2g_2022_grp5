@@ -19,12 +19,10 @@
 
 
 <div class="comp">
-    <h2 style="color:rgb(188, 29, 29); margin-right:50%;">ログアウト完了</h2>
-    <hr>
-
-    <p style="margin-top:40px; margin-bottom:25px;">ログアウトが完了しました</p>
+    <h2 style="color:rgb(188, 29, 29);">ログアウト完了</h2>
+    <p style="margin-top:40px;">ログアウトが完了しました</p>
     
-    <a href="(G1-1)toppage.php">トップページへ戻る</a>
+    <a href="(G1-1)toppage.php"><button class="btn-btn-danger">トップページへ戻る</button></a>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

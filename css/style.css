@@ -230,3 +230,11 @@ transition: .4s;
   text-align: right;
   margin-right: 2%;
 }
+
+.itembuy{
+  margin-top:150px;
+  border: 1px solid #333333;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom:5%;
+}

@@ -19,6 +19,10 @@
 
 <?php
     session_start();
+
+    if(!isset($_SESSION['customer_id'])){
+        header("Location:(G1-4-1)login.php");
+    }
 ?>
 
 <p class="border" style="margin-top:150px;">商品購入履歴</p>

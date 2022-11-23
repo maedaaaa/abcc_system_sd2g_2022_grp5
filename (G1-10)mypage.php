@@ -17,9 +17,29 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
-<h2 style="color:red; margin-left:20%; margin-top:150px">mypage仮</h2>
+<h2 style="color: rgb(188, 29, 29); margin-left:20%; margin-top:150px">マイページ</h2>
    
-<a href="(G1-12-1)logout.php"><button>ログアウト</button></a>
+<hr>
+
+<div class="My">
+
+    <a href="(G1-13)itemhistory.php"  class="alink">
+        <div class="mypage">
+            <p>ご購入履歴</p>
+        </div>
+    </a>
+
+    <a href="(G1-11-1)acountinfo.php"  class="alink">
+        <div class="mypage">
+            <p>お客様情報</p>
+        </div>
+    </a>
+
+</div>
+
+<div class="text-center" style="margin-top:5%;">
+    <a href="(G1-12-1)logout.php"><button class="btn-btn-danger" >ログアウト</button></a>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

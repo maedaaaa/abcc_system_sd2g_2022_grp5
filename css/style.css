@@ -260,3 +260,29 @@ transition: .4s;
   margin-bottom:5%;
   padding:2%;
 }
+
+/* マイページ */
+.My{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin-top: 3%;
+  margin-left: auto; margin-right: auto;
+}
+
+.mypage{
+  background-color: #9393934c;
+  width:20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .mypage {
+    width: 200px;
+    height: 200px;
+  }
+}

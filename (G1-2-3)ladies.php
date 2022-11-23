@@ -47,7 +47,6 @@
 
 <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
     <div class="row">
         <?php
         require_once 'DBManager.php';

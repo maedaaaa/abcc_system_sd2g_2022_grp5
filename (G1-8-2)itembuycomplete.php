@@ -44,6 +44,11 @@ session_start()
     }
 ?>
 
+<!-- カートセッションの破棄 -->
+<?php 
+    unset($_SESSION['item']);
+?>
+
 <!-- 購入完了表示 -->
 <div class="comp">
 

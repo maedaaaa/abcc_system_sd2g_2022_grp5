@@ -27,7 +27,7 @@
 
 <!-- カート件数 -->
 <h2 style="color:rgb(188, 29, 29); margin-top:150px; margin-left:10%;">カート件数( <?php echo count($_SESSION["item"]); ?> )</h2>
-
+<hr>
 
 <div class="row">
     <div class="col-lg-7">

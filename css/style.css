@@ -238,3 +238,25 @@ transition: .4s;
   margin-right:8%;
   margin-bottom:5%;
 }
+
+/* 購入履歴 */
+.itemhistory{
+  margin-top:7%;
+  border: 1px solid #333333;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom:5%;
+  padding:2%;
+}
+
+.hisimg{
+  width:150px;
+}
+.cartzero{
+  margin-top: 5%;
+  border: 1px solid #333333;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom:5%;
+  padding:2%;
+}

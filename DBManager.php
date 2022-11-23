@@ -127,5 +127,23 @@ class DBManager{
         
         $ps->execute();
     }
+
+    //購入履歴
+    public function itemHistory($getcustomer_id){
+        $pdo = $this->dbConnect();
+
+        $sql ="SELECT * FROM order_items AS OI INNER JOIN 
+        orders AS O ON OI.order_id = O.order_id INNER JOIN 
+        items AS I ON OI.item_id = I.item_id WHERE O.customer_id = ?
+        ORDER BY OI.order_id ASC";
+
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,$getcustomer_id,PDO::PARAM_INT);
+        
+        $ps->execute();
+        $searcharray = $ps->fetchALL();
+
+        return $searcharray;
+    }
 }
 ?>

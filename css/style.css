@@ -286,3 +286,12 @@ transition: .4s;
     height: 200px;
   }
 }
+
+.pHis{
+  margin-top:5%;
+  text-align: center;
+}
+
+.error{
+  color: rgb(188, 29, 29);
+}

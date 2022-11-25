@@ -32,7 +32,10 @@
 
     $dbmng = new DBManager;
     $searcharray = $dbmng->itemHistory($_SESSION['customer_id']);
-
+    if(count($searcharray)==0){
+        echo '<p class="pHis">現在、ご購入された商品はございません</p>';
+    }
+    
     foreach($searcharray as $row){
         echo '<div class="itemhistory row">';
 

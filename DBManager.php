@@ -64,6 +64,19 @@ class DBManager{
         }
     }
 
+
+    //新規登録エラーチェック
+    public function customermail($getmail){
+        $pdo = $this->dbConnect();
+        $sql = "SELECT * FROM customers WHERE mail = ?";
+        $ps = $pdo->prepare($sql);
+    
+        $ps->bindValue(1,$getmail,PDO::PARAM_STR);
+        $ps->execute();
+        $searcharray = $ps->fetchALL();
+        return $searcharray;
+    }
+
     //新規登録
     public function addUser($getmail,$getpass,$getlastname,$getfirstname,$getpostcode,$getaddress,$getphone){
         $pdo = $this->dbConnect();

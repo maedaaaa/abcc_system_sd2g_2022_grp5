@@ -40,6 +40,7 @@ $sum = 0;
 
     foreach($_SESSION['item'] as $id=> $product){
         $itemId = $id;
+        
         $searcharray = $dbmng->getItemInfo($itemId);
         foreach($searcharray as $row){
         echo '<div class="cart row">';

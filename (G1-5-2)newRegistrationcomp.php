@@ -19,9 +19,16 @@
 
 <?php
     require_once 'DBManager.php';
+    session_start();
+    if (!isset($_SESSION['join'])) {
+        header('Location: (G1-5-1)newRegistration.php');
+        exit();
+    }
+
 
     $dbmng = new DBManager;
-    $dbmng->addUser($_POST["mail"],$_POST["pass"],$_POST["lastname"],$_POST["firstname"],$_POST["postcode"],$_POST["address"],$_POST["phone"]);
+    $dbmng->addUser($_SESSION['join']["mail"],$_SESSION['join']["pass"],$_SESSION['join']["lastname"],
+        $_SESSION['join']["firstname"],$_SESSION['join']["postcode"],$_SESSION['join']["address"],$_SESSION['join']["phone"]);
 
         echo '<h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">新規登録完了</h2>';
 
@@ -31,6 +38,8 @@
         echo '<p style="text-align: center; font-size: 17px; margin-bottom:30px; margin-top:10px">ありがとうございます</p>';
        
         echo '<a href="(G1-1)toppage.php" style="margin-left:46.3%; margin-top:50px">トップページへ戻る</a>';
+
+        unset($_SESSION['join']);
 ?>
 
 

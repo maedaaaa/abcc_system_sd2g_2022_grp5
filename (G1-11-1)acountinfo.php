@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new Registration</title>
+    <title>acountinfo</title>
 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -17,7 +17,7 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
-<h2 style="color:red; margin-left:20%; margin-top:150px">アカウント情報</h2>
+<h2 style="color: rgb(188, 29, 29); margin-left:20%; margin-top:150px">アカウント情報</h2>
 
 <form action="(G1-5-2)newRegistrationcomp.php" method="post" id="newuser">
     
@@ -57,7 +57,7 @@
         <label for="txt7">電話番号</label>
     </div>
 
-    <input type="submit" class="btn btn-danger" style="margin-top: 8%; margin-left:30%; margin-bottom:10%;" value="変更する">
+    <input type="submit" class="btn-btn-danger" style="margin-top: 8%; margin-left:30%; margin-bottom:10%;" value="変更する">
 
 </form>
 

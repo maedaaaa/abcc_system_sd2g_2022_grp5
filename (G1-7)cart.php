@@ -19,6 +19,11 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
+<!-- 商品削除 -->
+<?php
+    unset($_SESSION['item'][$_POST['unsetid']]);
+?>
+
 <!-- カートセッションに情報がない場合cart2に遷移 -->
 <?php if(!isset($_SESSION['item'])){
         header("Location:(G1-7)cart2.php");
@@ -47,10 +52,18 @@ $sum = 0;
         echo    '<div class="cart-div col-6">';
         echo        '<img class="cartimg" src = "./img/'.$row["item_img"].'" > ';
         echo    '</div>';
-        echo    '<div class="cart-div col-6">';
+        echo    '<div class="col-6">';
+        echo        '<div class="cart-div ">';
         echo        '<h3 style="margin-top:15%;">'.$row["item_name"].'</h3>';
         echo        '<p style="margin-top:10%">¥'.$row["item_price"].'</p>';
         echo        $product['count'].'品';
+        echo        '</div>';
+        echo        '<div  class="unsetitem">'; 
+        echo        '<form action="(G1-7)cart.php" method="post">';
+        echo        '<input type="hidden" name="unsetid" value="'.$id.'">';
+        echo        '<input type="submit"value="削除" class="unsetitemchild">';
+        echo        '</form>';
+        echo        '</div>';
         echo    '</div>';
         echo '</div>';
         $sum = $sum + $row["item_price"] * $product['count'];
@@ -58,7 +71,8 @@ $sum = 0;
     }
 ?>
     </div>
-
+          
+    </form>
 <!-- 注文概要 -->
     <div class="col-lg-5">
         <div class="cart-info">

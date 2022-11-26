@@ -219,6 +219,16 @@ transition: .4s;
   margin-bottom:10px;
 }
 
+.unsetitem{
+  text-align: right;
+}
+
+.unsetitemchild{
+  margin-top: 45px;
+  background    : #ffffff;
+  border        : 2px solid #ffffff;
+}
+
 /* 注文概要 */
 .money{
   text-align: left;

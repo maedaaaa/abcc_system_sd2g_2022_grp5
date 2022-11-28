@@ -17,6 +17,31 @@
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
+<?php
+    require_once 'DBManager.php';
+    session_start();
+    if (!isset($_SESSION['join'])) {
+        header('Location: (G1-5-1)newRegistration.php');
+        exit();
+    }
+
+
+    $dbmng = new DBManager;
+    $dbmng->addUser($_SESSION['join']["mail"],$_SESSION['join']["pass"],$_SESSION['join']["lastname"],
+        $_SESSION['join']["firstname"],$_SESSION['join']["postcode"],$_SESSION['join']["address"],$_SESSION['join']["phone"]);
+
+        echo '<h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">新規登録完了</h2>';
+
+        echo'<hr>';
+        
+        echo '<p style="text-align: center; font-size: 17px; margin-bottom:5px; margin-top:40px">登録が完了しました</p>';
+        echo '<p style="text-align: center; font-size: 17px; margin-bottom:25px; margin-top:10px">ありがとうございます</p>';
+       
+        echo '<div style="text-align: center;"><a href="(G1-1)toppage.php">トップページへ戻る</a></div>';
+
+        unset($_SESSION['join']);
+?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

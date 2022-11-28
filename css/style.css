@@ -1,5 +1,5 @@
 .title {
-    color:red;
+    color:rgb(188, 29, 29);
     margin-left:40px;
 }
 
@@ -31,4 +31,277 @@
 .second {
     margin-top: 103px;
     padding-top: 10px;
+}
+
+#newuser{
+    width:60%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 50px;;
+}
+
+.txtBox {
+    margin-bottom: 20px;;
+}
+
+/* ↓🌻yui 追加 */
+.tp{
+    color:rgb(188, 29, 29);
+}
+ 
+/* 画像の下に文字-------------------------------- */
+.container{
+    position: relative;
+}
+
+.img-h1{
+    position: absolute;
+    top: 400px;
+    right: px;
+    left: 180px;
+    font-size:35px;
+    color:rgba(123, 31, 6, 0.463);
+    padding:0;
+    margin:0;
+    animation: img-h1 2.0s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+  
+  @keyframes img-h1 {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  
+.img-men-h1{
+  position: absolute;
+  top: 400px;
+  right: px;
+  left: 180px;
+  font-size:35px;
+  color:rgba(248, 246, 245, 0.873);
+  padding:0;
+  margin:0;
+  animation: img-men-h1 2.0s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+@keyframes img-men-h1 {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.imgs{
+    animation: imgs 7.2s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    
+}
+@keyframes imgs{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ---------------------------------- */
+
+
+/* 文字の下の線がうごくやつ----------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  #container {
+    margin: 70px 20px;
+  }
+  
+  .border{
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    color:rgb(188, 29, 29);
+  }
+  
+  .border:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px rgba(102, 12, 12, 0.947);
+    transform: translateX(-50%);
+    animation: border_anim 4.0s ease-in forwards;
+  }
+  
+  @keyframes border_anim {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+/* ----------------------------------- */
+
+.comp{
+  margin-top: 150px;
+  text-align: center;
+}
+
+.alink{
+  color:inherit;
+  text-decoration: none;
+}
+
+.itemimgone{
+  width:300px;
+  height: auto;
+}
+
+.btn-btn-danger{
+display: inline-block;
+padding: 0.3em 1em;
+text-decoration: none;
+color: rgb(188, 29, 29);
+border: solid 2px rgb(188, 29, 29);
+border-radius: 3px;
+transition: .4s;
+}
+
+.btn-btn-danger:hover {
+  background: rgb(188, 29, 29);
+  color: white;
+  
+}
+
+/* カート */
+.cart{
+  margin-top:5%;
+  border: 1px solid #333333;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:5%;
+}
+
+.cartimg{
+  width:200px;
+}
+
+.cart-div{
+  text-align: center;
+}
+
+.cart-info{
+  margin-top:7%;
+  border: 1px solid #333333;
+  margin-left:5%;
+  margin-right:10%;
+  margin-bottom:5%;
+}
+
+.cart-info2{
+  background-color: rgba(55, 55, 55, 0.184);
+  padding: 2%;
+  margin-bottom:10px;
+}
+
+.unsetitem{
+  text-align: right;
+}
+
+.unsetitemchild{
+  margin-top: 45px;
+  background    : #ffffff;
+  border        : 2px solid #ffffff;
+}
+
+/* 注文概要 */
+.money{
+  text-align: left;
+  margin-left: 2%;
+   float: left
+}
+
+.money2{
+  text-align: right;
+  margin-right: 2%;
+}
+
+.itembuy{
+  margin-top:150px;
+  border: 1px solid #333333;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom:5%;
+}
+
+/* 購入履歴 */
+.itemhistory{
+  margin-top:7%;
+  border: 1px solid #333333;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom:5%;
+  padding:2%;
+}
+
+.hisimg{
+  width:150px;
+}
+.cartzero{
+  margin-top: 5%;
+  border: 1px solid #333333;
+  margin-left:8%;
+  margin-right:8%;
+  margin-bottom:5%;
+  padding:2%;
+}
+
+/* マイページ */
+.My{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin-top: 3%;
+  margin-left: auto; margin-right: auto;
+}
+
+.mypage{
+  background-color: #9393934c;
+  width:20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .mypage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.pHis{
+  margin-top:5%;
+  text-align: center;
+}
+
+.error{
+  color: rgb(188, 29, 29);
 }

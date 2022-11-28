@@ -19,14 +19,29 @@
 
 <!-- メンズ見出し -->
 <div class ="second row">
-    <div class="col-4">
-        <h3 style="margin-left:60px;">メンズ</h3>
-    </div>
-    <div class="col-8"  style="text-align:right; padding-right:60px;">
+    
+    <div class="col-12"  style="text-align:right; padding-right:60px;">
         <a href="(G1-2-1)itemlist.php">商品一覧</a>
         <a href="(G1-2-3)ladies.php">レディース</a>
     </div>
 </div>
+
+<br>
+    
+    
+    <img src="img/m0328_001395 (1).jpg" class="imgs" style="width: 100%; height:600px; object-fit: cover;" loop autoplay muted>
+    <h1 class="img-men-h1">Watches for men</h1>
+    
+
+
+    <div id="container">
+    <p class="border">メンズウォッチセレクション</p>
+    </div>
+
+    <hr>
+
+</div>
+
 
 <!-- 商品表示 -->
 

@@ -8,8 +8,8 @@
 
     <div class="col-8"  style="text-align:right;">
     <a href="(G1-1)toppage.php"><button class="btn btn-light"><i class="bi bi-house-fill" style="  font-size:20px;"></i></button></a>
-    <a href="https://www.google.co.jp"><button class="btn btn-light"><i class="bi bi-person-circle" style="  font-size:20px;"></i></button></a>
-    <a href="https://www.google.co.jp"><button class="btn btn-light" style="margin-right:30px;"><i class="bi bi-cart-check-fill" style="  font-size:20px;"></i></button></a>
+    <a href="(G1-4-1)login.php"><button class="btn btn-light"><i class="bi bi-person-circle" style="  font-size:20px;"></i></button></a>
+    <a href="(G1-7)cart.php"><button class="btn btn-light" style="margin-right:30px;"><i class="bi bi-cart-check-fill" style="  font-size:20px;"></i></button></a>
     </div>
 </div> 
 

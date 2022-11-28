@@ -305,3 +305,21 @@ transition: .4s;
 .error{
   color: rgb(188, 29, 29);
 }
+
+/* お客様情報 */
+.cusinfoparent{
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+  border: 1px solid #333333;
+  padding:2%;
+}
+
+.cusinfo{
+  float: left
+}
+
+.cusinfo2{
+  text-align: right
+}

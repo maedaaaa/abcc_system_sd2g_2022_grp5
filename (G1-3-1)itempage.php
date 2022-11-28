@@ -29,7 +29,7 @@
 <!-- 商品単体表示 -->
 <div class="second row"> 
     <!-- <div class="col-lg-6 text-center"> -->
-    <div align="center">
+    <div style="text-align: center;">
         <?php
             foreach($searcharray as $row){
                 echo '<img src="./img/'.$row["item_img"].'" class="itemimgone">';
@@ -38,7 +38,7 @@
     </div>
 
 <!-- <div class="col-lg-6 text-center" style="margin-top:100px;"> -->
-    <div align="center" style="margin-top: 2%; margin-bottom: 5%; ">
+    <div  style="text-align: center; margin-top: 2%; margin-bottom: 5%; ">
         <?php
             foreach($searcharray as $row){
                 echo '<h2>'.$row["item_name"].'</h2>';
@@ -66,10 +66,9 @@
 <!-- <div class="second row">  -->
     <!-- <div class="col-lg-6 text-center" style="padding:5%;" > -->
         
-        <div align="center">
-        <div style="width: 450px;">
+    <div style="width: 500px; margin-right:auto; margin-left:auto;">
 
-        <h2 style="color:rgb(188, 29, 29);">商品説明</h2>
+    <h2 style="color:rgb(188, 29, 29); text-align: center">商品説明</h2>
         <?php
             foreach($searcharray as $row){
                 echo '<p style="color: gray;">'.$row["item_description"].'</p>';

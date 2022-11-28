@@ -133,7 +133,7 @@
 
 
     
-<div align="center">
+<div style="text-align: center;">
  <input type="submit" class ="btn-btn-danger" style="margin-bottom:10%;" value="新規登録">
  </div>
 

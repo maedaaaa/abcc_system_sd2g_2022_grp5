@@ -35,9 +35,9 @@
         echo'<hr>';
         
         echo '<p style="text-align: center; font-size: 17px; margin-bottom:5px; margin-top:40px">登録が完了しました</p>';
-        echo '<p style="text-align: center; font-size: 17px; margin-bottom:30px; margin-top:10px">ありがとうございます</p>';
+        echo '<p style="text-align: center; font-size: 17px; margin-bottom:25px; margin-top:10px">ありがとうございます</p>';
        
-        echo '<a href="(G1-1)toppage.php" style="margin-left:46.3%; margin-top:50px">トップページへ戻る</a>';
+        echo '<div style="text-align: center;"><a href="(G1-1)toppage.php">トップページへ戻る</a></div>';
 
         unset($_SESSION['join']);
 ?>

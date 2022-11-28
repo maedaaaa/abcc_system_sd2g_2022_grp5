@@ -1,3 +1,5 @@
+✨
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -34,10 +36,21 @@
 
 <!-- ページ表示 -->
 <div class="comp">
-<h2 style="color:rgb(188, 29, 29);">カートに追加</h2>
+<!-- <h2 style="color:rgb(188, 29, 29);">カートに追加</h2>
     <p style="margin-top:40px;">カートに商品を追加しました。</p>
     <p>引き続きショッピングをお楽しみください</p>
-    <a href="(G1-7)cart.php"><button class="btn-btn-danger">カートを見る</button></a>
+    <a href="(G1-7)cart.php"><button class="btn-btn-danger">カートを見る</button></a> -->
+
+    <h2 style="color:rgb(188, 29, 29); margin-right:50%;">カートに追加</h2>
+<hr>
+    <p style="margin-top:40px;">カートに商品を追加しました。</p>
+    <p>引き続きショッピングをお楽しみください</p>
+
+    <a href="(G1-7)cart.php">カートを確認する</a> <br>
+    <div style="margin-top:5px;">
+
+    <a href="(G1-1)toppage.php">トップページへ戻る</a> 
+
 </div>
           
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

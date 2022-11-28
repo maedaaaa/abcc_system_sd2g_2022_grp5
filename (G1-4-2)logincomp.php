@@ -21,7 +21,8 @@
 <hr>
     <p style="margin-top:40px;">ログインが完了しました</p>
     <p>引き続きショッピングをお楽しみください</p>
-    <a href="(G1-1)toppage.php"><button class="btn-btn-danger">トップページへ戻る</button></a>
+    <a href="(G1-1)toppage.php">トップページへ戻る</a>
+    
     
 </div>
 

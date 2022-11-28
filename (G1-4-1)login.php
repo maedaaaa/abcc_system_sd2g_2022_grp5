@@ -42,7 +42,7 @@
         <label for="txt2">パスワード</label>
     </div>
 
-    <div align="center">
+    <div style="text-align: center;">
     <input type="submit" class="btn-btn-danger" style="margin-top: 2%;" value="ログイン"> 
     </div>
   
@@ -54,7 +54,7 @@
 <p style="margin-top: 5%;">▻アカウントをお持ちでない方</p>
 
 <!-- <a href="(G1-5-1)newRegistration.php" style="margin-top: 3%; margin-left:43.35%; margin-bottom:10%;"><button class="btn-btn-danger" >新規登録へ</button></a> -->
-<div align="center">
+<div style="text-align: center;">
 <a href="(G1-5-1)newRegistration.php" style="margin-top: 3%; margin-bottom:10%;"><button class="btn-btn-danger" >新規登録へ</button></a>
 </div>
 

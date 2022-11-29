@@ -59,8 +59,8 @@ class DBManager{
         foreach($searcharray as $row){
             echo '<div class="itemdisplay col-lg-4">';
             $cls = new item();
-             $cls-> funcInfo($row["item_id"]);
-             echo '</div>';
+            $cls-> funcInfo($row["item_id"]);
+            echo '</div>';
         }
     }
 

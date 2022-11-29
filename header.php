@@ -35,7 +35,7 @@
             <a class="nav-link" href="#">特集ページ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">トップページ</a>
+            <a class="nav-link" href="(G1-1)toppage.php">トップページ</a>
           </li>
         </ul>
         

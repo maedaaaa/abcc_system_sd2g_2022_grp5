@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"> 
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/botan.css">
 </head>
 <body>
 
@@ -21,8 +22,8 @@
 <div class ="second row">
     
     <div class="col-12"  style="text-align:right; padding-right:60px;">
-        <a href="(G1-2-1)itemlist.php">商品一覧</a>
-        <a href="(G1-2-2)men's.php">メンズ</a>
+        <a href="(G1-2-1)itemlist.php" class="btnlinestretches3"><span>商品一覧</span></a>
+        <a href="(G1-2-2)men's.php" class="btnlinestretches3"><span>メンズ</span></a>
     </div>
 </div>
 

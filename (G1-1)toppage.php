@@ -51,7 +51,7 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h1>最高級タイムピースを取り揃えたコレクション</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>

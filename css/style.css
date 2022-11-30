@@ -9,13 +9,19 @@
     z-index: 2;
 }
 
-#myCarousel{
-    margin-top: 103px;
+.top{
+  width:100%;
+  margin-top: 103px;
 }
 
-.carousel {
-    margin-right: 20px;
-    margin-left: 20px;
+.topimg{
+  width:100%;height:400px; object-fit:cover;
+}
+
+@media (min-width: 960px) {
+  .topimg {
+    width:100%;height:600px; object-fit:cover;
+  }
 }
 
 .itemdisplay{
@@ -172,6 +178,10 @@ body {
   height: auto;
 }
 
+.itemP{
+  width: 80%; margin-right:auto; margin-left:auto;
+}
+
 .btn-btn-danger{
 display: inline-block;
 padding: 0.3em 1em;
@@ -304,4 +314,22 @@ transition: .4s;
 
 .error{
   color: rgb(188, 29, 29);
+}
+
+/* お客様情報 */
+.cusinfoparent{
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+  border: 1px solid #333333;
+  padding:2%;
+}
+
+.cusinfo{
+  float: left
+}
+
+.cusinfo2{
+  text-align: right
 }

@@ -59,8 +59,8 @@ class DBManager{
         foreach($searcharray as $row){
             echo '<div class="itemdisplay col-lg-4">';
             $cls = new item();
-             $cls-> funcInfo($row["item_id"]);
-             echo '</div>';
+            $cls-> funcInfo($row["item_id"]);
+            echo '</div>';
         }
     }
 
@@ -153,6 +153,33 @@ class DBManager{
         $ps = $pdo->prepare($sql);
         $ps->bindValue(1,$getcustomer_id,PDO::PARAM_INT);
         
+        $ps->execute();
+        $searcharray = $ps->fetchALL();
+
+        return $searcharray;
+    }
+
+    //顧客情報取得
+    public function getcustomer($getid){
+        $pdo = $this->dbConnect();
+
+        $sql="SELECT * FROM customers WHERE customer_id = ?";
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,$getid,PDO::PARAM_INT);
+
+        $ps->execute();
+        $searcharray = $ps->fetchALL();
+
+        return $searcharray;
+    }
+
+    //商品検索
+    public function itemSearch($getsearch){
+        $pdo = $this->dbConnect();
+        $sql="SELECT * FROM items WHERE item_name LIKE ?";
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,'%'.$getsearch.'%',PDO::PARAM_STR);
+
         $ps->execute();
         $searcharray = $ps->fetchALL();
 

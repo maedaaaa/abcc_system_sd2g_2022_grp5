@@ -18,13 +18,13 @@
         <h2 style="color:rgb(188, 29, 29);">季節の特集ページ</h2>
             <p style="margin-top:40pxpx;">秋の装いにあうシックな</p>
             <p>腕時計をご紹介。</p>
-            <a href="(G1-3-1)itempage.php">
+            <a href="(G1-3-1)itempage.php" class="alink">
                 <img src="m0328_001395 (1).jpg"
                  >
                  <p>商品名</p>
                  <p>￥</p>
                 </a>
-<a href="(G1-3-1)itempage.php">
+<a href="(G1-3-1)itempage.php" class="alink">
     <img src="SEAMASTER 300.png">
     <p>商品名</p>
     <p>￥</p>

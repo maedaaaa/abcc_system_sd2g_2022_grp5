@@ -30,6 +30,14 @@
     }
 ?>
 
+<!-- すべて削除された場合カートセッション削除してcart2に遷移-->
+<?php
+if(count($_SESSION["item"])==0){
+    unset($_SESSION['item']);
+    header("Location:(G1-7)cart2.php");
+}
+?>
+
 <!-- カート件数 -->
 <h2 style="color:rgb(188, 29, 29); margin-top:150px; margin-left:10%;">カート件数( <?php echo count($_SESSION["item"]); ?> )</h2>
 <hr>

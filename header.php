@@ -32,17 +32,22 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">特集ページ</a>
+            <a class="nav-link" href="(G1-6)specialedition.php">特集ページ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">トップページ</a>
+            <a class="nav-link" href="(G1-1)toppage.php">トップページ</a>
           </li>
         </ul>
         
       </div>
-      <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
+
+      <form action="(G1-9)itemsearch.php" method="post" role="search">
+        <div style="display:inline-flex">
+          <button type="submit" style="background: transparent; border: none"><i class="bi bi-search" style="font-size:20px;"></i></button>
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="itemsearch">
+        </div>
+          
+      </form>
     </div>
   </nav>
 </div>

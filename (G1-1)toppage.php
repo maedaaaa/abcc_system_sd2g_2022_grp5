@@ -20,6 +20,7 @@
 
 
   <!-- ホーム画像スライド -->
+<div class="top">
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -31,7 +32,7 @@
       <!-- 一個目 -->
       <div class="carousel-item active">
       <!-- 画像、動画 -->
-      <video src="img/hublot_pc.mp4" style="width:100%; height:600px; object-fit: cover;" loop autoplay muted></video>
+      <video src="img/hublot_pc.mp4" class="topimg" loop autoplay muted></video>
       
 
         <div class="container">
@@ -46,11 +47,11 @@
       <!-- 二個目 -->
       <div class="carousel-item">
       <!-- 画像、動画 -->
-      <video src="img/hublot_pc.mp4" style="width:100%; height:600px; object-fit: cover;" loop autoplay muted></video> 
+      <video src="img/hub-collection-watches-cover.mp4" class="topimg" loop autoplay muted></video> 
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h1>最高級タイムピースを取り揃えたコレクション</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
@@ -60,7 +61,7 @@
       <!-- 三個目 -->
       <div class="carousel-item">
       <!-- 画像、動画 -->
-      <video src="img/video-home-SP37-V5-desktop_3.mp4"  style="width:100%; height:600px; object-fit: cover;" loop autoplay muted></video>
+      <video src="img/video-home-SP37-V5-desktop_3.mp4"  class="topimg" loop autoplay muted></video>
 
         <div class="container">
           <div class="carousel-caption text-end">
@@ -81,8 +82,11 @@
     </button>
   </div>
 
+</div>
 
   <!-- 商品表示 -->
+<p class="border" style="margin-top:5%;">～おススメの商品をご紹介～</p>
+  
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->

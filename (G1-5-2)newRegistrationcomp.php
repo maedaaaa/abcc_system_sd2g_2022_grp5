@@ -30,6 +30,12 @@
     $dbmng->addUser($_SESSION['join']["mail"],$_SESSION['join']["pass"],$_SESSION['join']["lastname"],
         $_SESSION['join']["firstname"],$_SESSION['join']["postcode"],$_SESSION['join']["address"],$_SESSION['join']["phone"]);
 
+        $searchArray = $dbmng->logincheck($_SESSION['join']["mail"]);
+    
+        foreach($searchArray as $row){   
+                $_SESSION['customer_id'] = $row['customer_id'];
+        }
+
         echo '<h2 style="color:rgb(188, 29, 29); margin-left:20%; margin-top:150px">新規登録完了</h2>';
 
         echo'<hr>';

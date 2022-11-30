@@ -66,8 +66,7 @@
 <!-- <div class="second row">  -->
     <!-- <div class="col-lg-6 text-center" style="padding:5%;" > -->
         
-    <div style="width: 500px; margin-right:auto; margin-left:auto;">
-
+    <div class="itemP">
     <h2 style="color:rgb(188, 29, 29); text-align: center">商品説明</h2>
         <?php
             foreach($searcharray as $row){
@@ -78,7 +77,6 @@
 
     <!-- <div class="col-lg-6 text-center"> -->
     </div>
-       </div>
 
     <div style="margin-bottom: 5%;">
 

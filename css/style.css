@@ -9,13 +9,19 @@
     z-index: 2;
 }
 
-#myCarousel{
-    margin-top: 103px;
+.top{
+  width:100%;
+  margin-top: 103px;
 }
 
-.carousel {
-    margin-right: 20px;
-    margin-left: 20px;
+.topimg{
+  width:100%;height:400px; object-fit:cover;
+}
+
+@media (min-width: 960px) {
+  .topimg {
+    width:100%;height:600px; object-fit:cover;
+  }
 }
 
 .itemdisplay{
@@ -170,6 +176,10 @@ body {
 .itemimgone{
   width:300px;
   height: auto;
+}
+
+.itemP{
+  width: 80%; margin-right:auto; margin-left:auto;
 }
 
 .btn-btn-danger{

@@ -24,6 +24,8 @@
      if(!empty($_POST)){
         if ($_POST['mail'] === "") {
             $error['mail'] = "blank";
+        }else if(!preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/",$_POST['mail'])){
+            $error['mail'] = "notmatch";
         }
         if ($_POST['pass'] === "") {
             $error['pass'] = "blank";
@@ -36,13 +38,19 @@
         }
         if ($_POST['postcode'] === "") {
             $error['postcode'] = "blank";
+        }else if(!preg_match("/^[0-9]{3}-[0-9]{4}$/",$_POST['postcode'])){
+            $error['postcode'] = "notmatch";
         }
         if ($_POST['address'] === "") {
             $error['address'] = "blank";
         }
         if ($_POST['phone'] === "") {
             $error['phone'] = "blank";
+        }else if(!preg_match("/^[0-9]{10,11}$/",$_POST['phone'])){
+            $error['phone'] = "notmatch";
         }
+
+        
 
         if (!isset($error)) {
             $dbmng = new DBManager;
@@ -75,7 +83,9 @@
                 <p class="error">＊メールアドレスを入力してください</p>
             <?php elseif (!empty($error["mail"]) && $error['mail'] === 'duplicate'): ?>
                 <p class="error">＊このメールアドレスはすでに登録済みです</p>
-                <?php endif ?>
+                <?php elseif (!empty($error["mail"]) && $error['mail'] === 'notmatch'): ?>   
+                    <p class="error">＊メールアドレスの形式ではありません</p>
+                    <?php endif ?>
 
     <div class="txtBox form-floating">
         <input type="text" class="form-control" id="txt2"
@@ -104,6 +114,7 @@
                     <p class="error">＊姓を入力してください</p>
                     <?php endif ?>
 
+    <p style="font-size:12px;">ハイフン(-)を含む８桁</p>
     <div class="txtBox form-floating">
         <input type="text" class="form-control" id="txt5"
              placeholder="mail"name="postcode">
@@ -111,6 +122,8 @@
     </div>
     <?php if (!empty($error["postcode"]) && $error['postcode'] === 'blank'): ?>
                     <p class="error">＊郵便番号を入力してください</p>
+                    <?php elseif (!empty($error["postcode"]) && $error['postcode'] === 'notmatch'): ?>   
+                    <p class="error">＊郵便番号の形式ではありません</p>
                     <?php endif ?>
 
     <div class="txtBox form-floating">
@@ -121,7 +134,8 @@
     <?php if (!empty($error["address"]) && $error['address'] === 'blank'): ?>
                     <p class="error">＊住所を入力してください</p>
                     <?php endif ?>
-
+    
+                    <p style="font-size:12px;">ハイフン(-)なしの半角数字</p>
     <div class="txtBox form-floating">
         <input type="text" class="form-control" id="txt7"
              placeholder="mail"name="phone">
@@ -129,6 +143,8 @@
     </div>
     <?php if (!empty($error["phone"]) && $error['phone'] === 'blank'): ?>
                     <p class="error">＊電話番号を入力してください</p>
+                    <?php elseif (!empty($error["phone"]) && $error['phone'] === 'notmatch'): ?>   
+                    <p class="error">＊電話番号の形式ではありません</p>
                     <?php endif ?>
 
 

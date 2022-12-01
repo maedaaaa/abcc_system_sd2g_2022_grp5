@@ -14,12 +14,13 @@
 </head>
 <body>
 
+<?php session_start(); ?>
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
 <?php
     require_once 'DBManager.php';
-    session_start();
+    
     if (!isset($_SESSION['join'])) {
         header('Location: (G1-5-1)newRegistration.php');
         exit();

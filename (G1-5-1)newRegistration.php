@@ -13,13 +13,12 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-
+<?php session_start(); ?>
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
 <?php 
      require_once 'DBManager.php';
-     session_start();
 
      if(!empty($_POST)){
         if ($_POST['mail'] === "") {

@@ -14,11 +14,11 @@
 </head>
 <body>
 
+<?php session_start(); ?>
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
 <?php 
-    session_start();
 
     if(!isset($_SESSION['customer_id'])){
         header("Location:(G1-7)cart.php");

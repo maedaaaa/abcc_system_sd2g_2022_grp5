@@ -16,12 +16,13 @@
 </head>
 <body>
 
+<?php session_start(); ?>
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
 <!-- 受け取ったPOSTをセッションに保存 -->
 <?php 
-    session_start();
+    
     $id = $_POST["id"];
     if(!isset($_SESSION['item'])){
         $_SESSION['item']=[];

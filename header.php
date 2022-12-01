@@ -32,7 +32,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="(G1-6)specialedition.php">特集ページ</a>
+            <a class="nav-link" href="(G1-6)specialedition1.php">特集ページ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="(G1-1)toppage.php">トップページ</a>

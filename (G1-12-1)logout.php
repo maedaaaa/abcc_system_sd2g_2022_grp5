@@ -18,7 +18,7 @@
 <?php include_once 'header.php'; ?>
 
 <div class="comp">
-<h3 style="color: rgb(188, 29, 29);">ログアウトしますか？</h3>
+<p style="font-size:30px;">ログアウトしますか？</p>
 <a href="logout.php"><button class="btn-btn-danger" style="margin-top:40px;">ログアウト</button></a>
 </div>
 

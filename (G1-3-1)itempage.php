@@ -42,7 +42,7 @@
         <?php
             foreach($searcharray as $row){
                 echo '<h2>'.$row["item_name"].'</h2>';
-                echo '<p>￥'.$row["item_price"].'</p>';
+                echo '<p>￥'.number_format($row["item_price"]).'</p>';
             }
             
             //session のためのform

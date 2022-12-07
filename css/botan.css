@@ -19,7 +19,7 @@
 .btnlinestretches3 span{
     /*テキストを前面に出すためz-indexの値を高く設定*/
   position:relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .btnlinestretches3:hover span{
@@ -31,7 +31,7 @@
   content:'';
     /*絶対配置で線の位置を決める*/
   position:absolute;
-  z-index:1;
+  z-index:0;
   bottom:0;
   left:0;
     /*線の形状*/

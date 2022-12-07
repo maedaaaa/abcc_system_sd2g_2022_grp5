@@ -1,4 +1,4 @@
-✨
+✨<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<?php session_start(); ?>
+
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 

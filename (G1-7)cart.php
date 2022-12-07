@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +17,7 @@
 </head>
 <body>
 
-<?php session_start(); ?>
+
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
@@ -63,7 +65,7 @@ $sum = 0;
         echo    '<div class="col-6">';
         echo        '<div class="cart-div ">';
         echo        '<h3 style="margin-top:15%;">'.$row["item_name"].'</h3>';
-        echo        '<p style="margin-top:10%">¥'.$row["item_price"].'</p>';
+        echo        '<p style="margin-top:10%">¥'.number_format($row["item_price"]).'</p>';
         echo        $product['count'].'品';
         echo        '</div>';
         echo        '<div  class="unsetitem">'; 
@@ -88,13 +90,13 @@ $sum = 0;
                     <p>注文の概要</p>
                 </div>
             <p class="money">小計</p>
-            <p class="money2"> <?php echo '¥ '.$sum ?></p>
+            <p class="money2"> <?php echo '¥ '.number_format($sum) ?></p>
             <p class="money">配送・お渡し</p>
             <p class="money2"> <?php echo '¥ '.$postage = 0 ?></p>
             <p class="money">税込み</p>
-            <p class="money2"> <?php echo '¥ '.$tax = $sum * 0.1?></p>
+            <p class="money2"> <?php echo '¥ '.number_format($tax = $sum * 0.1)?></p>
             <p class="money">合計</p>
-            <p class="money2"> <?php echo '¥ '.$money = $tax + $sum + $postage?></p>
+            <p class="money2"> <?php echo '¥ '.number_format($money = $tax + $sum + $postage)?></p>
             <div style="padding:2%;">
             <button class="btn-btn-danger" onclick="logincheck()" style="width:100%;">購入手続きへ</button>
 
@@ -103,9 +105,11 @@ $sum = 0;
              function logincheck() {
                 var loginId = <?php phplogincheck(); ?>;
                   if(loginId == true){
-                    location.href = "(G1-8-1)itembuy.php";;
+                    location.href = "(G1-8-1)itembuy.php";
                   }else{
-                    alert("購入手続きへ進むにはログインが必要です");
+                    if (confirm("購入手続きへ進むにはログインが必要です")) {
+                        location.href = "(G1-4-1)login.php";
+                    }
                   }
              }
             </script>

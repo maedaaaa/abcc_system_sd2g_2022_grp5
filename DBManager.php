@@ -2,7 +2,7 @@
 class DBManager{
     //DB接続
     private function dbConnect(){
-        $pdo = new PDO('mysql:host=localhost;dbname=developmentdb;charset=utf8','webuser','abccsd2');
+        $pdo = new PDO('mysql:host=mysql207.phy.lolipop.lan;dbname=LAA1419521-development;charset=utf8','LAA1419521','Pass0514');
         return $pdo;
     }
 
@@ -116,7 +116,7 @@ class DBManager{
         $ps = $pdo->prepare($sql);
     
         $ps->bindValue(1,$getcustomer_id,PDO::PARAM_INT);
-        $ps->bindValue(2,date('Y-m-d'),PDO::PARAM_STR);
+        $ps->bindValue(2,date('Y-m-d h:i:s'),PDO::PARAM_STR);
         $ps->bindValue(3,0,PDO::PARAM_INT);
         $ps->bindValue(4,$getorder_value,PDO::PARAM_INT);
         
@@ -135,7 +135,7 @@ class DBManager{
         $ps->bindValue(1,$getitem_id,PDO::PARAM_INT);
         $ps->bindValue(2,$getorder_id,PDO::PARAM_INT);
         $ps->bindValue(3,$getorder_item_quantity,PDO::PARAM_INT);
-        $ps->bindValue(4,date('Y-m-d'),PDO::PARAM_STR);
+        $ps->bindValue(4,date('Y-m-d h:i:s'),PDO::PARAM_STR);
         $ps->bindValue(5,$getpurchase_price,PDO::PARAM_INT);
         
         $ps->execute();

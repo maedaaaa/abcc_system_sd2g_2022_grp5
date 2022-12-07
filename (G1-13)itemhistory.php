@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +15,7 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-<?php session_start(); ?>
+
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
@@ -42,7 +44,7 @@
         echo '<p>購入日：'.$row["order_item_date"].'</p>';
         echo '<p>商品番号：'.$row["item_id"].'</p>';
         echo '<p>商品名：'.$row["item_name"].'</p>';
-        echo '<p>商品価格：'.$row["purchase_price"].'円</p>';
+        echo '<p>商品価格：'.number_format($row["purchase_price"]).'円</p>';
         echo '<p>購入個数：'.$row["order_item_quantity"].'</p>';
         echo '</div>';
 

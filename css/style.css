@@ -1,3 +1,7 @@
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
 .title {
     color:rgb(188, 29, 29);
     margin-left:40px;
@@ -183,6 +187,7 @@ body {
 }
 
 .btn-btn-danger{
+  background-color:#e2e2e2 ;
 display: inline-block;
 padding: 0.3em 1em;
 text-decoration: none;
@@ -234,6 +239,7 @@ transition: .4s;
 }
 
 .unsetitemchild{
+  color:black;
   margin-top: 45px;
   background    : #ffffff;
   border        : 2px solid #ffffff;

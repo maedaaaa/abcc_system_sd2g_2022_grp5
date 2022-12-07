@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +15,7 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-<?php session_start(); ?>
+
 
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>

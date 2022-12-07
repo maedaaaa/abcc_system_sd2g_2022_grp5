@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -14,7 +16,7 @@
 </head>
 <body>
 
-<?php session_start(); ?>
+
 <!-- header読み込み -->
 <?php include_once 'header.php'; ?>
 
@@ -45,13 +47,13 @@ $sum = 0;
                     <p>注文の概要</p>
                 </div>
             <p class="money">小計</p>
-            <p class="money2"> <?php echo '¥ '.$sum ?></p>
+            <p class="money2"> <?php echo '¥ '.number_format($sum )?></p>
             <p class="money">配送・お渡し</p>
             <p class="money2"> <?php echo '¥ '.$postage = 0 ?></p>
             <p class="money">税込み</p>
-            <p class="money2"> <?php echo '¥ '.$tax = $sum * 0.1?></p>
+            <p class="money2"> <?php echo '¥ '.number_format($tax = $sum * 0.1)?></p>
             <p class="money">合計</p>
-            <p class="money2"> <?php echo '¥ '.$money = $tax + $sum + $postage?></p>
+            <p class="money2"> <?php echo '¥ '.number_format($money = $tax + $sum + $postage)?></p>
             <div style="padding:2%;">
             <form action="(G1-8-2)itembuycomplete.php" method="post">
                 <input type="hidden" name="goukei" value="<?php echo $money ?>">
